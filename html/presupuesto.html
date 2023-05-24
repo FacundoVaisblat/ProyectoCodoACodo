@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Layout de Sitio Web con CSS Grid</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="contenedor">
+        <header class="header">
+            <ul>
+                <li style="--clr:#00ade1">
+                    <a href="../index.html" data-text="&nbsp;Inicio">&nbsp;Inicio&nbsp;</a>
+                </li>
+                <li style="--clr:#ff6493">
+                    <a href="./articulos.html" data-text="&nbsp;Articulos">&nbsp;Articulos&nbsp;</a>
+                </li>
+                <li style="--clr:#ffdd1c">
+                    <a href="./contacto.html" data-text="&nbsp;Contacto">&nbsp;Contacto&nbsp;</a>
+                </li>
+                <li style="--clr:#dc00d4">
+                    <a href="#" data-text="&nbsp;Presupuesto">&nbsp;Presupuesto&nbsp;</a>
+                </li>
+            </ul>
+
+            <!-- barra O Sidebar-->
+            <aside class="sidebar2">
+                <div class="container">
+                    <h2>AGREGAR API CON LA COTIZACION DEL $</h2>
+                </div>
+            </aside>
+
+        </header>
+
+        <main class="contenido">
+            <h1>Formulario Requerido Para el Presupuesto</h1>
+            <br>
+            <form action="">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <!-- Nombre-->
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre..." size="40" maxlength="5"
+                        required>
+
+                    <!-- Apellido -->
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="Apellido" id="Apellido" placeholder="Apellido..." size="40" maxlength="5"
+                        required>
+
+                    <!-- DNI -->
+                    <label for="dni">DNI: </label>
+                    <input type="number" placeholder="DNI..." required>
+                    <br>
+                    <br>
+
+                    <!-- Mail -->
+                    <label for="mail">Mail: </label>
+                    <input type="text" name="Mail" id="Mail" placeholder="mail..." size="40" maxlength="5" required>
+
+                    <!-- Telefono de Contacto -->
+                    <label for="Telefono de Contacto">Telefono de Contacto: </label>
+                    <input type="Telefono de Contacto" placeholder="Telefono..." size="25" maxlength="5" required>
+
+                </fieldset>
+
+                <br><br>
+
+
+                <fieldset>
+
+                    <legend>Caracteristicas del Equipo</legend>
+
+                    <label for="Marca">Seleccione su marca de preferencia</label>
+
+                    <select name="Marca" id="Marca">
+                        <option value="Seleccione">Seleccione</option>
+                        <option value="1">Acer</option>
+                        <option value="2">Aple</option>
+                        <option value="3">Asus</option>
+                        <option value="4">HP</option>
+                        <option value="5">Lenovo</option>
+                        <option value="6">Dell</option>
+                        <option value="7">Razer</option>
+
+                    </select>
+
+                    <label for="Marca">Seleccione el Sistema Operativo</label>
+
+                    <select name="Marca" id="Marca">
+                        <option value="Seleccione">Seleccione</option>
+                        <option value="1">GNU/Linux</option>
+                        <option value="2">Google chrome OS</option>
+                        <option value="3">Mac OS</option>
+                        <option value="4">Microsoft Windows</option>
+                        <option value="5">Solaris</option>
+                        <option value="6">Ubuntu</option>
+                        <option value="7">Unix</option>
+
+                    </select>
+
+                </fieldset>
+
+                <br><br>
+
+                <fieldset>
+                    <!-- Equipos y Perifericos-->
+                    <legend>Equipos y Perifericos</legend>
+
+                    <label for="Conocimientos">Dispositivos de Entrada: </label>
+                    <br>
+
+                    <input type="checkbox" id="Mouse2"> Mouse &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Teclado"> Teclado
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Mouse"> Escáner &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Mouse"> Joystick &nbsp
+                    <br>
+
+                    <input type="checkbox" id="Mouse"> Micrófono &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Mouse"> Tableta gráfica &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Mouse"> Lápiz óptico &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Mouse"> Webcam
+                    <br>
+
+                    <input type="checkbox" id="Mouse"> Cámara digital de fotos &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Mouse"> Lector de código de barras
+
+                    <br>
+                    <br>
+                    <label for="Conocimientos">Dispositivos de Salida: </label>
+                    <br>
+                    <input type="checkbox" id="Monitor"> Monitor &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Parlante"> Parlante &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Auriculares"> Auriculares &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <br>
+                    <input type="checkbox" id="Impresora"> Impresora &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <input type="checkbox" id="Proyector"> Proyector &nbsp&nbsp&nbsp&nbsp&nbsp
+
+                    <!-- Otras Caracteristicas -->
+                    <br><br>
+                    <legend>Otras Caracteristicas</legend>
+                    <br>
+                    <textarea name="Otras Caracteristicas" id="Otras Caracteristicas" cols="50" rows="5"></textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar Solicitud">
+                    <input type="reset" value="Borrar Datos">
+                </fieldset>
+
+            </form>
+
+        </main>
+
+
+        <aside class="sidebar">
+            <div class="container">
+                <img src="../img/ryzen2.png">
+                <img src="../img/amd2.png">
+                <img src="../img/Aple.png">
+                <img src="../img/hp.png">
+                <img src="../img/Lenovo.png">
+            </div>
+        </aside>
+
+        <div class="footer">
+            <div class="footer-texto1">
+                ¡Contactanos!
+                <a href="https://www.google.com.ar/maps/@-34.6022763,-58.3779019,17z">
+                    <p>Florida 500 PB, Local 373 <br> Microcentro (CABA)</p>
+                </a>
+
+            </div>
+            <div class="footer-texto2">
+                Nuestros Horarios
+                <p>Lun a Vier. 9:00 AM - 18:00 PM <br>Sab 10:00 AM - 14:30 PM</p>
+            </div>
+            <div class="footer-redes-sociales">
+                <a href="#" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="../img/twittwe.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

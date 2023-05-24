@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Layout de Sitio Web con CSS Grid</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="contenedor">
+        <header class="header">
+            <ul>
+                <li style="--clr:#00ade1">
+                    <a href="#" data-text="&nbsp;Inicio">&nbsp;Inicio&nbsp;</a>
+                </li>
+                <li style="--clr:#ff6493">
+                    <a href="./html/articulos.html" data-text="&nbsp;Articulos">&nbsp;Articulos&nbsp;</a>
+                </li>
+                <li style="--clr:#ffdd1c">
+                    <a href="./html/contacto.html" data-text="&nbsp;Contacto">&nbsp;Contacto&nbsp;</a>
+                </li>
+                <li style="--clr:#dc00d4">
+                    <a href="./html/presupuesto.html" data-text="&nbsp;Presupuesto">&nbsp;Presupuesto&nbsp;</a>
+                </li>
+            </ul>
+
+            <!-- barra O Sidebar-->
+            <aside class="sidebar2">
+                <div class="container">
+                    <h2>AGREGAR API CON LA COTIZACION DEL $</h2>
+                </div>
+            </aside>
+
+        </header>
+
+        <!-- Contenido o cuadros para imagenes hp-->
+        <main class="contenido">
+            <h2>CONTENIDO</h2>
+            <!-- IMAGEN 1-->
+            <div class="contenedor-principal">
+                <div class="tarjeta">
+                    <div class="imagen-contenedor">
+                        <img src="img/articulos/Pc-CS-Power-i3_Foto0g.jpg" alt="PC CS Power i3">
+                    </div>
+                    <div class="tarjeta-cuerpo">
+
+                        <h3>PC CS
+                            <br> Power i3
+                        </h3>
+
+                        <a href="./html/articulos.html" class="leer-mas">Leer más <span> >> </span> </a>
+                    </div>
+                </div>
+            </div>
+            <!-- IMAGEN 2-->
+            <div class="contenedor-principal">
+                <div class="tarjeta">
+                    <div class="imagen-contenedor">
+                        <img src="img/articulos/Pc-CS-Logic_Foto0.jpg" alt="PC CS Logic">
+                    </div>
+                    <div class="tarjeta-cuerpo">
+
+                        <h3>PC CS
+                            <br> Logic
+                        </h3>
+
+                        <a href="./html/articulos.html" class="leer-mas">Leer más <span> >> </span> </a>
+                    </div>
+                </div>
+            </div>
+            <!-- IMAGEN 3-->
+            <div class="contenedor-principal">
+                <div class="tarjeta">
+                    <div class="imagen-contenedor">
+                        <img src="img/articulos/Pc-CS-Ryzen-5_Foto0.jpg" alt="PC CS Ryzen 5">
+                    </div>
+                    <div class="tarjeta-cuerpo">
+
+                        <h3>PC CS
+                            <br> Ryzen 5
+                        </h3>
+
+                        </p>
+                        <a href="./html/articulos.html" class="leer-mas">Leer más <span> >> </span> </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGEN 4-->
+            <div class="contenedor-principal">
+                <div class="tarjeta">
+                    <div class="imagen-contenedor">
+                        <img src="img/articulos/90NB0TY1-M00C20_Foto0.jpg" alt="Notebook AUSUS X515EA">
+                    </div>
+                    <div class="tarjeta-cuerpo">
+
+                        <h3>Notebook AUSUS
+                            <br> X515EA
+                        </h3>
+
+                        <a href="./html/articulos.html" class="leer-mas">Leer más <span> >> </span> </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGEN 5-->
+            <div class="contenedor-principal">
+                <div class="tarjeta">
+                    <div class="imagen-contenedor">
+                        <img src="img/articulos/81VU00HLAR_Foto0.jpg" alt="Notebook Lenovo IdeaPad 1 14IGL05">
+                    </div>
+                    <div class="tarjeta-cuerpo">
+
+                        <h3>Notebook Lenovo
+                            <br> IdeaPad 1 14IGL05
+                        </h3>
+
+                        <a href="./html/articulos.html" class="leer-mas">Leer más <span> >> </span> </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- IMAGEN 6-->
+            <div class="contenedor-principal">
+                <div class="tarjeta">
+                    <div class="imagen-contenedor">
+                        <img src="img/articulos/81WQ00MLAR_Foto0.jpg" alt="Notebook Lenovo IdeaPad 3 15IGL05">
+                    </div>
+                    <div class="tarjeta-cuerpo">
+
+                        <h3>Notebook Lenovo
+                            <br> IdeaPad 3 15IGL05
+                        </h3>
+
+                        <a href="./html/articulos.html" class="leer-mas">Leer más <span> >> </span> </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- barra lateral o Sidebar-->
+        <aside class="sidebar">
+            <div class="container">
+                <img src="./img/ryzen2.png">
+                <img src="./img/amd2.png">
+                <img src="./img/Aple.png">
+                <img src="./img/hp.png">
+                <img src="./img/Lenovo.png">
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-texto1">
+                ¡Contactanos!
+                <a href="https://www.google.com.ar/maps/@-34.6022763,-58.3779019,17z">
+                    <p>Florida 500 PB, Local 373 <br> Microcentro (CABA)</p>
+                </a>
+            </div>
+
+            <div class="footer-texto2">
+                Nuestros Horarios
+                <p>Lun a Vier. 9:00 AM - 18:00 PM <br>Sab 10:00 AM - 14:30 PM</p>
+            </div>
+            <div class="footer-redes-sociales">
+                <a href="#" target="_blank"><img src="./img/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="./img/twittwe.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
